@@ -24,7 +24,7 @@ const resolvers = {
      Query:{
           
           allEmpleados:async (root, args)=> {
-               const {data: personempleados} = await axios.get('http://localhost:3000/empleados')
+               const {data: personempleados} = await axios.get('http://localhost:3001/empleados')
                console.log(personempleados)
                return personempleados
           },
